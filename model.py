@@ -8,6 +8,7 @@ class Model:
     def AppendList(self, val):
         self.data.append(val)
 
+    # Remove values at specified indices from the list
     def RemoveFromList(self, indices):
         tmp = []
         index = 0
@@ -17,13 +18,16 @@ class Model:
 
         self.data = tmp
 
+
     # Clears the list
     def ClearList(self):
         self.data.clear()
 
+
     # Fetches list content
     def GetDataFromList(self):
         return self.data
+
 
     # Fetches number of entries in list
     def GetNumDataInList(self):
