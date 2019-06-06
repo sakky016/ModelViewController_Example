@@ -16,8 +16,9 @@ class Model:
             if (index not in indices):
                 tmp.append(val)
 
-        self.data = tmp
+            index = index + 1
 
+        self.data = tmp
 
     # Clears the list
     def ClearList(self):
